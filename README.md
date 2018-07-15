@@ -18,6 +18,6 @@ npm start
 npm run dev # starts nodemon on port 3000
 ```
 
-## DB Schema
+## Initial Headlines DB Schema
 
-![]()
+![](https://www.lucidchart.com/publicSegments/view/a6510112-291e-487a-8eb0-6b758516c837/image.png)
