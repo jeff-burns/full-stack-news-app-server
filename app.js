@@ -7,6 +7,7 @@ const cors = require('cors');
 const app = express();
 
 const headlines = require('./api/headlines')
+const userinput = require('./api/userinput')
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -20,7 +21,9 @@ app.get('/', (req, res) => {
   })
 })
 
-app.use('/api/v1/headlines', headlines)
+// app.use('/api/v1/headlines', headlines)
+
+app.use('/api/v1/userinput', userinput)
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
