@@ -7,17 +7,20 @@ exports.seed = function(knex, Promise) {
       return knex("user_input").insert([
         {
           userName: "Jeff",
-          source: "BBC News",
+          source: "http://www.bbc.co.uk/news",
+          domain: "bbc.co.uk",
           keywords: "World Cup"
         },
         {
           userName: "putintrump",
-          source: "USA Today",
+          source: "http://www.usatoday.com/news",
+          domain: "usatoday.com",
           keywords: "Putin Trump"
         },
         {
           userName: "JB",
-          source: "The Washington Post",
+          source: "https://www.washingtonpost.com",
+          domain: "washingtonpost.com",
           keywords: "Trump Russia"
         }
       ]);
